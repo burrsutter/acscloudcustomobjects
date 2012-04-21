@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+	<!-- refer to burrsutter.com for how to modify these keys -->
+    <property name="acs-oauth-secret-production" type="string">insertYourOwnKeys</property>
+    <property name="acs-oauth-key-production" type="string">insertYourOwnKeys</property>
+    <property name="acs-api-key-production" type="string">insertYourOwnKeys</property>
+    <property name="acs-oauth-secret-development" type="string">insertYourOwnKeys</property>
+    <property name="acs-oauth-key-development" type="string">insertYourOwnKeys</property>
+    <property name="acs-api-key-development" type="string">insertYourOwnKeys</property>
+    <deployment-targets>
+        <target device="mobileweb">true</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">false</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.0.1.GA2</sdk-version>
+    <id>com.burrsutter.cloudcustomobjects</id>
+    <name>CloudCustomObjects</name>
+    <version>1.0</version>
+    <publisher>burr</publisher>
+    <url>http://www.burrsutter.com</url>
+    <description>not specified</description>
+    <copyright>2012 by burr</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>26c0fd2e-1d8d-472f-9550-43c30223b140</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.0.1">ti.cloud</module>
+    </modules>
+</ti:app>

@@ -1,0 +1,4 @@
+My simple Appcelerator Cloud Services example for adding Custom Objects - note: it must be run after adding a user (clouduser project)
+and the correct user/password needs to be edited into FirstView.js
+
+Visit burrsutter.com for more details
